@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interior Concept</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    
+    <h1>Interior Concept</h1>
+    
+    <p class="tagline">Home Interior • Modular Kitchen • All Brands Hardware</p>
+    <button onclick="toggleForm()">Customer Details</button>
+    <h3 class="effect"> Festival Dhamaka Offer Upto 35% Discount</h3>
+  </header>
+
+  <!-- Section 1: Gallery -->
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <ul>
+      <div class="im"><li> <img src="file:///D:/shani/image/4.jpeg"alt="modular kitchen" width="500" height="333"> <img src="file:///D:/shani/image/3.jpeg"alt="modular kitchen" width="500" height="333">
+        <img src="file:///D:/shani/image/5.jpeg"alt="modular kitchen" width="500" height="333"></li></div></div>
+        <div class="sa"><li> <img src="file:///D:/shani/image/1.png"alt="modular kitchen" width="500" height="333"><img src="file:///D:/shani/image/2.jpeg"alt="modular kitchen" width="500" height="333">
+        <img src="file:///D:/shani/image/7.jpg"alt="modular kitchen" width="500" height="333"></li></div>
+        
+      <li>Interior Design</li>
+      <li>All Brands Hardware</li>
+    </ul>
+  </section>
+
+  <!-- Section 2: Terms & Conditions -->
+  <section class="terms">
+    <h2>Terms & Conditions</h2>
+    <ol>
+      <li>All furniture has 10-year warranty</li>
+      <li>All hardware has 10-year warranty</li>
+      <li>Quotations are valid for 15 days from issue date</li>
+    </ol>
+  </section>
+
+  <!-- Section 3: Contact -->
+  <section class="contact">
+    <h2>Contact Details</h2>
+    <p>Office Address: Near NIFFT, Hatia Office, Ranchi – 834003</p>
+    <p>Mobile: <a href="tel:+916201286189">6201286189</a></p>
+  </section>
+
+  <!-- Popup Form -->
+  <div id="popupForm" class="popup-form">
+    <form onsubmit="sendWhatsApp(event)">
+      <h3>fill the details prosece to interior</h3>
+      <label>Name: <input type="text" id="name" required></label>
+      <label>Phone: <input type="tel" id="phone" required></label>
+      <label>Message: <textarea id="message" required></textarea></label>
+      <button type="submit">Send via WhatsApp</button>
+      <button type="button" onclick="toggleForm()">Close</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
